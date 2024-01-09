@@ -1,0 +1,45 @@
+# .gitignore
+
+# Ignore virtual environment
+venv/
+
+# Ignore node_modules
+node_modules/
+
+/public/
+
+.idea/
+
+# Ignore collected static files
+/backend/staticfiles/
+/backend/web/settings.py
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore environment variables file
+.env
+
+# Ignore compiled JavaScript files
+/build/
+
+# Ignore IDE-specific files
+.vscode/
+*.code-workspace
+
+# Ignore logs
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Configuration files
+/eslintrc.cjs
+/postcss.config.js
+/tailwind.config.js
+/vite.config.ts

@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8e2f6, #f0d9fa, #faecdd);
+
+}
+
+button.active {
+  font-weight: bold; 
+  color: rgb(194, 80, 194); 
+  }
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(5px) rotate(5deg); }
+  75% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(5px) rotate(5deg); }
+}
+
+.shake {
+  animation:shake 0.9s infinite ease;
+}
+
+
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(
+      0 100%, 0 1%,
+      10% 0%, 20% 1%, 30% 0%, 40% 1%, 50% 0%, 60% 1%, 70% 0%, 80% 1%, 90% 0%, 100% 1%, 100% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0 100%, 0 1%,
+      0% 2%, 20% 1%, 30% 2%, 40% 1%, 50% 2%, 60% 1%, 70% 2%, 80% 1%, 90% 2%, 100% 1%, 100% 100%
+    );
+  }
+}
+
+
+
+
+.task-tracker {
+  position: relative;
+  width: 40px;
+  height: 100%;
+  background-color: #d9c1e0;
+  border-radius:2px;
+  left:0;
+  top:0;
+  height:100%;
+  overflow: hidden; 
+}
+
+.header {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #F5D8E8;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.filling {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, rgb(167, 54, 233), #f3d188);
+  transition: height 0.5s ease;
+  border-radius: 2px;
+  animation: wave 1.5s infinite linear;
+}

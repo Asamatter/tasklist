@@ -1,0 +1,14 @@
+{
+    "services": [
+      {
+        "name": "frontend",
+        "type": "static-build",
+        "buildCommand": "npm run build",
+        "staticBuildDir": "frontend/build",
+        "env": {
+          "NODE_ENV": "production"
+        }
+      }
+    ]
+  }
+  
