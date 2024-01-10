@@ -5,7 +5,10 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "esModuleInterop": true,  // Add this line
+    "esModuleInterop": true,  // Add this line,
+    "types": ["node"],
+
+    
 
     /* Bundler mode */
     "moduleResolution": "bundler",

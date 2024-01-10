@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { ITodo } from "../../types/types";
-import axios from "axios";
 import Fill from "../Fill";
 import { FaTrashAlt } from "react-icons/fa";
 import daysjs from "dayjs";
 import { fetchData } from "../../services/apiService";
+import api from '../../../api';
 
 const TodoItems: React.FC<{
   todos: ITodo[];
@@ -64,8 +64,8 @@ const TodoItems: React.FC<{
     console.log("Submitting update:", todoId, newCompletedStatus);
    
     try {
-      const response = await axios.put(
-        `https://backend-production-7211.up.railway.app/api/tasks/${todoId}/`,
+      const response = await api.put(
+        `/tasks/${todoId}/`,
         { completed: newCompletedStatus,  });
 
       const updatedTask = response.data;
@@ -118,7 +118,7 @@ useEffect(() => {
   const handleRemoveTask = async (index: number) => {
     try {
       const taskId = todos[index].id;
-      await axios.delete(`https://backend-production-7211.up.railway.app/api/tasks/${taskId}/`);
+      await api.delete(`/tasks/${taskId}/`);
 
       console.log("Task deleted successfully");
 
@@ -144,7 +144,7 @@ useEffect(() => {
   const handleSaveEdit = async (index: number) => {
     try {
       const taskId = todos[index].id;
-      await axios.put(`https://backend-production-7211.up.railway.app/api/tasks/${taskId}/`, {
+      await api.put(`/tasks/${taskId}/`, {
         title: editedTask,
       });
       console.log("Edited Task:", editedTask);
@@ -268,6 +268,11 @@ useEffect(() => {
           </span>
         ))}
       </div>
+
+      <div className="content">
+      <h1>Hello, Background Image!</h1>
+    </div>
+    
     </>
   );
 };

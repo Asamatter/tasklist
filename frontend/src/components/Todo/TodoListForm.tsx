@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import TodoItems from "./TodoItems";
 import { ITodo } from "../../types/types";
 import { fetchData } from "../../services/apiService";
 import Form from "../../pages/Form";
+import api from '../../../api';
 import { Link, Route, Routes, useNavigate, useLocation, } from "react-router-dom";
 
 const TodoListForm: React.FC = () => {
@@ -19,7 +19,7 @@ const TodoListForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://backend-production-7211.up.railway.app/api/tasks/", {
+      const response = await api.post("/tasks/", {
         title: title,
       });
       const newTask = response.data;
@@ -42,6 +42,8 @@ const TodoListForm: React.FC = () => {
   }, []);
 
   return (
+
+    
     <div className="break-words">
       <Routes>
         <Route
@@ -82,7 +84,7 @@ const TodoListForm: React.FC = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className=" bg-sky-200 shadow-md rounded-full p-1 hover:scale-125 block w-8 h-8"
+              className=" bg-[#B99800] shadow-md rounded-full p-1 hover:scale-125 block w-8 h-8"
             >
               <path
                 stroke-linecap="round"
@@ -93,6 +95,10 @@ const TodoListForm: React.FC = () => {
           </Link>
         )}
       </div>
+
+
+    
+
     </div>
   );
 };

@@ -3,17 +3,47 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  height:100vh;
 }
 
 body {
+  position: relative;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #f8e2f6, #f0d9fa, #faecdd);
+  background:#111111;
+  color: white;
+  
 
 }
 
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .content {
+    position: absolute;
+    top:50%;
+    right:-200px;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    height: 250px;
+    display: flex;
+
+    width:280px;
+  
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .content {
+    background-image: none;
+    display: none; 
+  }
+}
+
+
 button.active {
   font-weight: bold; 
-  color: rgb(194, 80, 194); 
+  color: #E65728; 
   }
 
 @keyframes shake {
@@ -52,7 +82,7 @@ button.active {
   position: relative;
   width: 40px;
   height: 100%;
-  background-color: #d9c1e0;
+  background-color: #37474F;
   border-radius:2px;
   left:0;
   top:0;
@@ -66,7 +96,8 @@ button.active {
   left: 50%;
   width: 25px;
   height: 25px;
-  background-color: #F5D8E8;
+  color: black;
+  background-color: #B99800;
   border-radius: 50%;
   transform: translateX(-50%);
 }
