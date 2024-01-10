@@ -50,7 +50,6 @@ vite.config.ts
 
 .eslinrec.cs
 output.css
-package-lock.json
 tsconfig.json
 tsconfig.node.json
 
