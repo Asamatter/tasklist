@@ -49,3 +49,4 @@ eslintrc.cjs
 vite.config.ts
 tsconfig.node.json
 package-lock.json
+output.css
