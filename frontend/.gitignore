@@ -48,4 +48,4 @@ Thumbs.db
 eslintrc.cjs
 vite.config.ts
 tsconfig.node.json
-package-lock.json
+
