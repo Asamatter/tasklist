@@ -38,14 +38,4 @@ db.sqlite3
 .DS_Store
 Thumbs.db
 
-# Configuration files
-/eslintrc.cjs
-/postcss.config.js
-/tailwind.config.js
-/vite.config.ts
 
-/.eslinrec.cs
-/output.css
-/package-lock.json
-/tsconfig.json
-/tsconfig.node.json
