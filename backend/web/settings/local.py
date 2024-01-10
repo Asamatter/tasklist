@@ -2,12 +2,8 @@ from .base import *
 
 DEBUG = True
 
-ALLOWED_HOSTS += ['localhost']
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  
-]
-
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",")
 CORS_ALLOW_CREDENTIALS = True
 
 DATABASES = {
