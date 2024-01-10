@@ -49,6 +49,5 @@ eslintrc.cjs
 vite.config.ts
 
 .eslinrec.cs
-package-lock.json
 tsconfig.json
 tsconfig.node.json
