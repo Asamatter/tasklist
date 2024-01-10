@@ -44,8 +44,8 @@ Thumbs.db
 /tailwind.config.js
 /vite.config.ts
 
-/frontend/.eslinrec.cs
-/frontend/output.css
-/frontend/package-lock.json
-/frontend/tsconfig.json
-/frontend/tsconfig.node.json
+/.eslinrec.cs
+/output.css
+/package-lock.json
+/tsconfig.json
+/tsconfig.node.json
