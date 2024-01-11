@@ -205,7 +205,7 @@ useEffect(() => {
   <button className={filterOption === "pending" ? "active" : ""} onClick={() => setFilterOption("pending")}>Pending</button>
   <button className={filterOption === "completed" ? "active" : ""} onClick={() => setFilterOption("completed")}>Completed</button>
 
-  <span className={`shake ${incompleteTasksCount === 0 || filterOption === "pending" ? "hidden" : "bg-[#63df74]"} absolute top-14 rounded-full w-5 h-5 text-sm`}>
+  <span className={`shake ${incompleteTasksCount === 0 || filterOption === "pending" ? "hidden" : "bg-[#63df74]"} text-black absolute top-14 rounded-full w-5 h-5 text-sm`}>
   {incompleteTasksCount > 0 && filterOption !== "pending" && incompleteTasksCount}
 </span>
 
