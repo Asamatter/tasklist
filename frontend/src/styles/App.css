@@ -19,9 +19,9 @@ body {
 /* Media query for larger screens */
 @media (min-width: 768px) {
   .content {
-    position: absolute;
+    position: fixed;
     top:59%;
-    right:-200px;
+    right:-20px;
     background-image: url('../images/background.png');
     background-size: cover;
     height: 250px;
