@@ -1,8 +1,8 @@
-import axios from 'axios';
+import api from '../../api';
 
 export const fetchData = async () => {
   try {
-    const response = await axios.get("https://backend-production-7211.up.railway.app/api/tasks/");
+    const response = await api.get("/tasks/");
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);

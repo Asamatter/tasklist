@@ -20,7 +20,7 @@ body {
 @media (min-width: 768px) {
   .content {
     position: absolute;
-    top:50%;
+    top:59%;
     right:-200px;
     background-image: url('../images/background.png');
     background-size: cover;
@@ -32,7 +32,6 @@ body {
   }
 }
 
-/* Media query for smaller screens */
 @media (max-width: 767px) {
   .content {
     background-image: none;

@@ -220,7 +220,7 @@ useEffect(() => {
             className={
               task.completed
                 ? "bg-green-400 rounded-xl bg-opacity-25 hover:cursor-pointer"
-                : "bg-white bg-opacity-10 hover:bg-gradient-to-r hover:from-pink-200 hover:to-rose-100 rounded-xl"}>
+                : "bg-white bg-opacity-10 hover:bg-[#292929] rounded-xl"}>
             <div
               style={{ height: "min-content" }}
               className="relative text-left col-span-1 bg-opacity-15 rounded text-sm p-6 lg:w-8/12 w-full md:mx-auto"
@@ -270,8 +270,7 @@ useEffect(() => {
       </div>
 
       <div className="content">
-      <h1>Hello, Background Image!</h1>
-    </div>
+      </div>
     
     </>
   );
