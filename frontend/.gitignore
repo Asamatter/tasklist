@@ -28,7 +28,6 @@ dist-ssr
 # Ignore node_modules
 node_modules/
 
-public/
 
 .vscode/
 .idea/
