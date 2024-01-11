@@ -219,7 +219,7 @@ useEffect(() => {
           <span
             className={
               task.completed
-                ? "bg-green-400 rounded-xl bg-opacity-25 hover:cursor-pointer"
+                ? "bg-green-300 hover:bg-[#314739] rounded-xl bg-opacity-25 hover:cursor-pointer"
                 : "bg-white bg-opacity-10 hover:bg-[#252525] rounded-xl"}>
             <div
               style={{ height: "min-content" }}
