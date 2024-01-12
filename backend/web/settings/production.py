@@ -5,13 +5,6 @@ DEBUG = False
 
 STATIC_ROOT = BASE_DIR / "static"
 
-DATABASES = {
-        'default': {            
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get("PGNAME"),
-            'USER': os.environ.get("PGUSER"),
-            'PASSWORD': os.environ.get("PGPASSWORD"),
-            'HOST': os.environ.get("PGHOST"),  
-            'PORT': os.environ.get("PGPORT"),
-        }
-    }
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
+DATABASES = {'default': dj_database_url.config(default=DATABASE_URL, engine='django.db.backends.postgresql')}
