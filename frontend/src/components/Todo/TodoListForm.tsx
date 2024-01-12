@@ -69,12 +69,17 @@ const TodoListForm: React.FC = () => {
         />
       </Routes>
 
-      <div className="flex items-center gap-4 fixed bottom-4 right-5">
+      <div className="fixed bottom-4 right-5">
+
+      
+
+<span className="fixed right-12 md:right-16 lg:right-24 xl:right-52 top-[390px]">
         {!isHomePage && (
-          <Link className="font-semibold" to="/">
+          <Link className="font-semibold hover:underline" to="/">
             Back
           </Link>
         )}
+        </span>
 
         {!isFormPage && (
           <Link to="/form">
@@ -94,6 +99,7 @@ const TodoListForm: React.FC = () => {
             </svg>
           </Link>
         )}
+        
       </div>
 
 

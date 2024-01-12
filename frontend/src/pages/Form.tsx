@@ -20,7 +20,7 @@ interface FormProps {
         required
       />
   
-      <button className="bg-emerald-300 font-semibold text-gray-700 absolute -bottom-12 left-2 hover:bg-opacity-75 rounded-full px-4 py-2 mt-2 lg:mx-2"
+      <button className="bg-emerald-400 absolute left-0 -bottom-14 font-semibold text-gray-900 hover:bg-opacity-75 rounded-full px-4 py-2 mt-2 lg:mx-2"
         type="submit">Submit</button>
 
 
