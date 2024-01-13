@@ -1,3 +1,5 @@
+![My App Logo](frontend/public/logo.svg)
+
 # Tasklist
 
 This is a simple Todo application built using Django, React, and TypeScript. It allows users to manage their tasks efficiently and provides a clean interface for adding, editing, and marking tasks
