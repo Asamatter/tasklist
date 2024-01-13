@@ -1,6 +1,7 @@
-# Todo App Django-react
+# <img src="frontend/public/logo.svg" alt="My App Logo" width="40" height="40" style="vertical-align:middle;">Tasklist
 
-This is a simple Todo application built using Django, React, and TypeScript. It allows users to manage their tasks efficiently and provides a clean interface for adding, editing, and marking tasks as co
+
+This is a simple Todo application built using Django, React, and TypeScript. It allows users to manage their tasks efficiently and provides a clean interface for adding, editing, and marking tasks
 
 # Features
 
