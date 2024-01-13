@@ -4,9 +4,18 @@ import os
 import sys
 
 
+
+def get_settings_module():
+    environment = os.environ.get('DJANGO_ENVIRONMENT')
+
+    if environment == 'prod':
+        return 'web.settings.production'
+    else:
+        return 'web.settings.local'
+
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web.settings.local')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', get_settings_module())
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -16,7 +25,6 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-
 
 if __name__ == '__main__':
     main()

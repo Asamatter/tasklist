@@ -1,2 +1,2 @@
 release: python manage.py migrate --settings=web.settings.production
-web: gunicorn web.wsgi
+web: DJANGO_ENVIRONMENT=prod gunicorn web.wsgi
