@@ -213,7 +213,7 @@ useEffect(() => {
 
 
 
-      <div className="grid grid-cols-1 gap-3 lg:w-8/12 mx-auto"
+      <div className="grid grid-cols-1 gap-3 lg:w-8/12 mx-auto pb-6"
         style={{ gridAutoFlow: "dense" }}>
             {filteredTodos.map((task, index) => (
           <span
@@ -255,10 +255,10 @@ useEffect(() => {
                           onChange={() => handleCompleted(task)}/>
 
                         <button onClick={() => handleRemoveTask(index)}>
-                          <FaTrashAlt className="text-rose-500 w-4 h-4" />
+                          <FaTrashAlt className="text-red-400 w-4 h-4" />
                         </button>
 
-                        <button onClick={() => handleEdit(index)}>Edit</button>
+                        <button className="hover:underline" onClick={() => handleEdit(index)}>Edit</button>
                       </div>
                     </div>
                   )}

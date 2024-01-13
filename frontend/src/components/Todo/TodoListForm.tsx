@@ -75,7 +75,7 @@ const TodoListForm: React.FC = () => {
 
 <span className="fixed right-12 md:right-16 lg:right-24 xl:right-52 top-[390px]">
         {!isHomePage && (
-          <Link className="font-semibold hover:underline" to="/">
+          <Link className="bg-[#332B0E] px-4 py-2 rounded-full font-semibold hover:underline" to="/">
             Back
           </Link>
         )}
